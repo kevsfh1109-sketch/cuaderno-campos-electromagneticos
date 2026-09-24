@@ -1,0 +1,2792 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Campos Electromagnéticos</title>
+
+    <link rel="stylesheet" href="cuadernovirtual.css">
+
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+
+    <script
+        id="MathJax-script"
+        async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+</head>
+
+<body>
+
+    <div class="contenidoCEM">
+
+        <div class="presentacion">
+
+            <h1>Campos Electromagnéticos</h1>
+
+            <img
+                src="https://autenticacion.portaloas.udistrital.edu.co/authenticationendpoint/images/logo-ud.png"
+                alt="Logo de la Universidad Distrital"
+                class="logoUniversidad">
+
+            <h2>Universidad Distrital Francisco José de Caldas</h2>
+
+            <div class="integrantes">
+
+                <h3>Integrantes</h3>
+
+                <p>Kevin Fernando Hurtado Cansario</p>
+                <p>20251005058</p>
+
+                <p>Edison Daniel González Sarmiento</p>
+                <p>20251005144</p>
+
+            </div>
+
+        </div>
+
+
+        <nav>
+
+            <h2>Contenido</h2>
+
+            <ul>
+                <li><a href="#introduccion">Introducción</a></li>
+                <li><a href="#carga-electrica">Carga eléctrica</a></li>
+                <li><a href="#ley-coulomb">Ley de Coulomb</a></li>
+                <li><a href="#fuerza-electrica">Fuerza eléctrica</a></li>
+                <li><a href="#fuerza-gravitacional">Fuerza gravitacional</a></li>
+                <li><a href="#comparacion">Fuerza eléctrica vs. gravitacional</a></li>
+                <li><a href="#campo-electrico">Campo eléctrico</a></li>
+                <li><a href="#campo-gravitacional">Campo gravitacional</a></li>
+                <li><a href="#comparacion-campos">Comparación entre campos</a></li>
+                <li><a href="#terminos">Términos desconocidos</a></li>
+            </ul>
+
+        </nav>
+
+
+        <main>
+
+            <section id="introduccion">
+
+                <h2>Introducción</h2>
+
+                <p>
+                    El electromagnetismo es una de las teorías fundamentales
+                    de la física y permite explicar una gran variedad de
+                    fenómenos naturales y tecnológicos. Los dispositivos
+                    electrónicos, los motores eléctricos, los generadores,
+                    las comunicaciones inalámbricas, los sensores y muchos
+                    sistemas utilizados en la vida cotidiana funcionan
+                    gracias a principios relacionados con las interacciones
+                    eléctricas y magnéticas.
+                </p>
+
+                <p>
+                    Para comprender estos fenómenos es necesario estudiar
+                    cómo interactúan las cargas eléctricas, cómo se
+                    distribuyen las fuerzas en el espacio y de qué manera
+                    una fuente puede producir una influencia sobre otras
+                    partículas o cuerpos. Esta influencia se describe
+                    mediante el concepto de campo, una herramienta física
+                    y matemática que permite analizar los efectos
+                    producidos por una fuente en diferentes puntos del
+                    espacio.
+                </p>
+
+                <p>
+                    Las primeras observaciones relacionadas con la
+                    electricidad estática se remontan a la antigüedad.
+                    Se descubrió que al frotar determinados materiales,
+                    como el ámbar, estos podían atraer pequeños objetos.
+                    Este fenómeno se produce porque el proceso de
+                    frotamiento puede generar una transferencia o
+                    redistribución de electrones entre los materiales.
+                </p>
+
+                <p>
+                    De manera independiente, también se observaron
+                    minerales capaces de atraer materiales como el hierro.
+                    Uno de los ejemplos más conocidos es la magnetita,
+                    un mineral que presenta propiedades magnéticas
+                    naturales. Durante mucho tiempo, la electricidad y
+                    el magnetismo se estudiaron como fenómenos separados,
+                    debido a que sus manifestaciones experimentales
+                    parecían diferentes.
+                </p>
+
+                <p>
+                    Con el desarrollo de la física experimental y
+                    matemática, especialmente a partir de los trabajos
+                    de científicos como Charles-Augustin de Coulomb,
+                    Hans Christian Ørsted, André-Marie Ampère, Michael
+                    Faraday y James Clerk Maxwell, se descubrió que la
+                    electricidad y el magnetismo están profundamente
+                    relacionados.
+                </p>
+
+                <p>
+                    Las cargas eléctricas pueden producir campos
+                    eléctricos y, cuando se encuentran en movimiento,
+                    pueden generar efectos magnéticos. Además, los
+                    campos eléctricos variables y los campos magnéticos
+                    variables están relacionados entre sí. Esta relación
+                    constituye la base de la propagación de las ondas
+                    electromagnéticas, entre las que se encuentra la luz.
+                </p>
+
+                <p>
+                    El estudio del electromagnetismo requiere comprender
+                    primero conceptos fundamentales como la carga
+                    eléctrica, la fuerza, el campo y el potencial. Estos
+                    conceptos permiten construir modelos matemáticos
+                    capaces de describir el comportamiento de partículas
+                    cargadas y de sistemas físicos más complejos.
+                </p>
+
+                <p>
+                    En este cuaderno virtual se estudiarán progresivamente
+                    las interacciones eléctricas y gravitacionales. En
+                    primer lugar, se analizará el concepto de carga
+                    eléctrica. Posteriormente, se estudiará la ley de
+                    Coulomb y la dependencia de la fuerza eléctrica con
+                    respecto a la magnitud de las cargas y la distancia
+                    que las separa.
+                </p>
+
+                <p>
+                    Después se introducirá el concepto de campo eléctrico
+                    y se establecerá una comparación con el campo
+                    gravitacional. Esta comparación permitirá identificar
+                    semejanzas matemáticas, como la dependencia
+                    inversamente proporcional al cuadrado de la distancia,
+                    y diferencias físicas relacionadas con las fuentes
+                    de cada interacción.
+                </p>
+
+                <p>
+                    El objetivo principal de este cuaderno es desarrollar
+                    una base conceptual y matemática que permita estudiar
+                    posteriormente temas más avanzados, como el principio
+                    de superposición, el potencial eléctrico, el flujo
+                    eléctrico, la ley de Gauss, los campos magnéticos y
+                    las ecuaciones de Maxwell.
+                </p>
+
+            </section>
+
+
+            <section id="carga-electrica">
+
+                <h2>Carga eléctrica</h2>
+
+                <p>
+                    La carga eléctrica es una propiedad física de la
+                    materia que determina la manera en que una partícula
+                    o un cuerpo participa en las interacciones
+                    electromagnéticas. Esta propiedad puede manifestarse
+                    mediante fuerzas de atracción o repulsión entre
+                    objetos que poseen carga eléctrica.
+                </p>
+
+                <p>
+                    Existen dos tipos de carga eléctrica: positiva y
+                    negativa. Las cargas del mismo signo se repelen,
+                    mientras que las cargas de signos opuestos se
+                    atraen. Esta característica diferencia la
+                    interacción eléctrica de la interacción
+                    gravitacional clásica, que se considera atractiva
+                    entre masas positivas.
+                </p>
+
+                <p>
+                    En la estructura atómica, los protones poseen carga
+                    positiva, los electrones poseen carga negativa y
+                    los neutrones no tienen carga eléctrica neta. Un
+                    átomo eléctricamente neutro contiene cantidades
+                    iguales de carga positiva y negativa.
+                </p>
+
+                <p>
+                    La magnitud de la carga eléctrica elemental está
+                    definida por el valor exacto:
+                </p>
+
+                <div class="ecuacion">
+                    $$e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$$
+                </div>
+
+                <p>
+                    La carga de un protón es positiva y la carga de un
+                    electrón es negativa. Por lo tanto, sus valores
+                    pueden expresarse como:
+                </p>
+
+                <div class="ecuacion">
+                    $$q_p=+e$$
+                </div>
+
+                <div class="ecuacion">
+                    $$q_e=-e$$
+                </div>
+
+                <p>
+                    La unidad de carga eléctrica en el Sistema
+                    Internacional es el coulomb, representado mediante
+                    la letra C. En muchos experimentos de laboratorio
+                    se utilizan unidades más pequeñas, como el
+                    milicoulomb, el microcoulomb y el nanocoulomb.
+                </p>
+
+                <p>
+                    La carga eléctrica cumple el principio de
+                    conservación. Esto significa que, en un sistema
+                    aislado, la carga total no se crea ni se destruye,
+                    aunque puede transferirse de un cuerpo a otro.
+                    Por ejemplo, cuando dos materiales se frotan,
+                    algunos electrones pueden pasar de un material
+                    al otro.
+                </p>
+
+                <p>
+                    En los conductores, las cargas eléctricas pueden
+                    desplazarse con relativa facilidad. En los
+                    materiales aislantes, en cambio, el movimiento
+                    de las cargas está más restringido. Esta diferencia
+                    es importante para comprender fenómenos como la
+                    electrización, la inducción electrostática y el
+                    funcionamiento de los circuitos eléctricos.
+                </p>
+
+                <p>
+                    La carga eléctrica puede considerarse una magnitud
+                    escalar, ya que se describe mediante un valor y
+                    un signo. Sin embargo, las fuerzas y los campos
+                    eléctricos asociados a ella son magnitudes
+                    vectoriales, por lo que también poseen dirección
+                    y sentido.
+                </p>
+
+            </section>
+
+
+            <section id="ley-coulomb">
+
+                <h2>Ley de Coulomb</h2>
+
+                <p>
+                    La ley de Coulomb describe la fuerza electrostática
+                    que existe entre dos cargas eléctricas puntuales.
+                    Esta ley permite determinar la magnitud de la
+                    interacción eléctrica cuando se conocen los valores
+                    de las cargas y la distancia que las separa.
+                </p>
+
+                <p>
+                    Una carga puntual es un modelo idealizado en el que
+                    se considera que toda la carga eléctrica de un cuerpo
+                    está concentrada en un único punto. Este modelo es
+                    útil cuando las dimensiones de los cuerpos son
+                    pequeñas en comparación con la distancia entre ellos.
+                </p>
+
+                <p>
+                    Para dos cargas puntuales, la magnitud de la fuerza
+                    eléctrica se expresa mediante:
+                </p>
+
+                <div class="ecuacion">
+                    $$F_e=k\frac{|q_1q_2|}{r^2}$$
+                </div>
+
+                <p>
+                    En esta expresión, $q_1$ y $q_2$ representan las
+                    magnitudes de las cargas eléctricas, $r$ es la
+                    distancia entre ellas y $k$ es la constante de
+                    Coulomb.
+                </p>
+
+                <p>
+                    La constante de Coulomb está relacionada con la
+                    permitividad eléctrica del vacío mediante la
+                    expresión:
+                </p>
+
+                <div class="ecuacion">
+                    $$k=\frac{1}{4\pi\varepsilon_0}$$
+                </div>
+
+                <p>
+                    En el vacío, la constante de Coulomb tiene un valor
+                    aproximado de:
+                </p>
+
+                <div class="ecuacion">
+                    $$k\approx8.988\times10^9\ \mathrm{N\,m^2/C^2}$$
+                </div>
+
+                <p>
+                    La permitividad eléctrica del vacío se representa
+                    mediante $\varepsilon_0$ y tiene un valor aproximado
+                    de:
+                </p>
+
+                <div class="ecuacion">
+                    $$\varepsilon_0\approx8.854\times10^{-12}\ \mathrm{F/m}$$
+                </div>
+
+                <p>
+                    La ley de Coulomb muestra que la fuerza eléctrica
+                    es directamente proporcional al producto de las
+                    magnitudes de las cargas. Por lo tanto, si una
+                    de las cargas aumenta y las demás variables
+                    permanecen constantes, la fuerza también aumenta
+                    proporcionalmente.
+                </p>
+
+                <p>
+                    Además, la fuerza es inversamente proporcional al
+                    cuadrado de la distancia. Si la distancia entre
+                    las cargas se duplica, la magnitud de la fuerza
+                    se reduce a la cuarta parte de su valor original.
+                </p>
+
+                <p>
+                    Aunque la ecuación anterior representa la magnitud
+                    de la fuerza, el signo de las cargas permite
+                    determinar si la interacción es atractiva o
+                    repulsiva. Dos cargas del mismo signo se repelen,
+                    mientras que dos cargas de signos opuestos se
+                    atraen.
+                </p>
+
+                <p>
+                    La ley de Coulomb es válida para cargas puntuales
+                    en reposo dentro del contexto de la electrostática.
+                    Para sistemas con cargas en movimiento o campos
+                    variables en el tiempo, es necesario utilizar una
+                    descripción más completa basada en la teoría
+                    electromagnética.
+                </p>
+
+            </section>
+
+
+            <section id="fuerza-electrica">
+
+                <h2>Fuerza eléctrica</h2>
+
+                <h3>Concepto de fuerza eléctrica</h3>
+
+                <p>
+                    La fuerza eléctrica es la interacción que se
+                    produce entre cuerpos o partículas que poseen
+                    carga eléctrica. Esta fuerza puede actuar a
+                    distancia y depende tanto de las propiedades de
+                    las cargas como de la separación entre ellas.
+                </p>
+
+                <p>
+                    La fuerza eléctrica es una magnitud vectorial.
+                    Por esta razón, para describirla completamente
+                    no es suficiente conocer su magnitud: también
+                    es necesario establecer su dirección y su sentido.
+                </p>
+
+                <p>
+                    Cuando dos cargas tienen el mismo signo, la fuerza
+                    es repulsiva. En este caso, cada carga experimenta
+                    una fuerza que la aleja de la otra. Cuando las
+                    cargas tienen signos opuestos, la fuerza es
+                    atractiva y ambas cargas tienden a acercarse.
+                </p>
+
+                <h3>Dependencia con la carga</h3>
+
+                <p>
+                    Si mantenemos constante la carga $q_2$ y la
+                    distancia $r$, la ley de Coulomb puede escribirse
+                    como:
+                </p>
+
+                <div class="ecuacion">
+                    $$F_e=
+                    \left(
+                    \frac{k|q_2|}{r^2}
+                    \right)|q_1|$$
+                </div>
+
+                <p>
+                    La expresión anterior muestra que la fuerza
+                    eléctrica es directamente proporcional a la
+                    magnitud de la carga $q_1$. Esto significa que,
+                    si la carga $q_1$ se duplica y todas las demás
+                    variables permanecen constantes, la fuerza
+                    también se duplica.
+                </p>
+
+                <p>
+                    Por ejemplo, si una carga produce una fuerza de
+                    $2\ \mathrm{N}$ sobre otra carga, al duplicar
+                    la magnitud de la primera carga, la fuerza
+                    tendría una magnitud de $4\ \mathrm{N}$,
+                    siempre que la distancia y la segunda carga
+                    permanezcan constantes.
+                </p>
+
+                <figure class="grafica">
+
+                    <img
+                        src="graficas/fuerza_electrica_carga.png"
+                        alt="Fuerza eléctrica para diferentes valores de carga">
+
+                    <figcaption>
+                        Fuerza eléctrica en función de la carga $q_1$,
+                        manteniendo constantes $q_2$ y $r$.
+                    </figcaption>
+
+                </figure>
+
+
+                <h3>Dependencia con la distancia</h3>
+
+                <p>
+                    Si las cargas permanecen constantes, la fuerza
+                    eléctrica depende de la distancia según:
+                </p>
+
+                <div class="ecuacion">
+                    $$F_e\propto\frac{1}{r^2}$$
+                </div>
+
+                <p>
+                    Esta relación indica que la fuerza disminuye
+                    rápidamente a medida que aumenta la separación
+                    entre las cargas. La dependencia cuadrática
+                    inversa significa que la distancia tiene una
+                    influencia importante sobre la magnitud de la
+                    interacción.
+                </p>
+
+                <p>
+                    Si la distancia se duplica, la fuerza se reduce
+                    a la cuarta parte. Si la distancia se triplica,
+                    la fuerza se reduce a una novena parte. De manera
+                    general, al multiplicar la distancia por un factor
+                    $n$, la fuerza se divide entre $n^2$.
+                </p>
+
+                <figure class="grafica">
+
+                    <img
+                        src="graficas/fuerza_electrica_distancia.png"
+                        alt="Fuerza eléctrica en función de la distancia">
+
+                    <figcaption>
+                        Dependencia de la fuerza eléctrica con la
+                        distancia entre dos cargas puntuales.
+                    </figcaption>
+
+                </figure>
+
+            </section>
+
+
+            <section id="fuerza-gravitacional">
+
+                <h2>Fuerza gravitacional</h2>
+
+                <p>
+                    La fuerza gravitacional es la interacción de
+                    atracción que existe entre cuerpos que poseen
+                    masa. En el modelo de la gravitación universal
+                    de Newton, todos los cuerpos con masa ejercen
+                    una fuerza gravitacional sobre los demás cuerpos.
+                </p>
+
+                <p>
+                    La magnitud de esta fuerza depende de las masas
+                    de los cuerpos y de la distancia que existe entre
+                    sus centros de masa. Para dos masas puntuales,
+                    la expresión matemática es:
+                </p>
+
+                <div class="ecuacion">
+                    $$F_g=G\frac{m_1m_2}{r^2}$$
+                </div>
+
+                <p>
+                    En esta expresión, $m_1$ y $m_2$ representan las
+                    masas de los cuerpos, $r$ es la distancia entre
+                    ellos y $G$ es la constante de gravitación
+                    universal.
+                </p>
+
+                <p>
+                    El valor aproximado de la constante gravitacional
+                    es:
+                </p>
+
+                <div class="ecuacion">
+                    $$G\approx6.674\times10^{-11}\
+                    \mathrm{N\,m^2/kg^2}$$
+                </div>
+
+                <p>
+                    Al igual que la fuerza eléctrica, la fuerza
+                    gravitacional depende inversamente del cuadrado
+                    de la distancia. Sin embargo, la fuerza
+                    gravitacional entre objetos cotidianos suele
+                    ser pequeña en comparación con la fuerza
+                    eléctrica entre partículas cargadas.
+                </p>
+
+                <p>
+                    En el modelo gravitacional clásico, la masa se
+                    considera positiva y la interacción gravitacional
+                    es atractiva. Por lo tanto, dos cuerpos con masa
+                    se atraen entre sí.
+                </p>
+
+                <p>
+                    La fuerza gravitacional tiene una importancia
+                    fundamental en sistemas astronómicos, ya que
+                    permite explicar el movimiento de planetas,
+                    satélites, estrellas y otros cuerpos celestes.
+                </p>
+
+                <figure class="grafica">
+
+                    <img
+                        src="graficas/fuerza_gravitacional.png"
+                        alt="Fuerza gravitacional para diferentes masas">
+
+                    <figcaption>
+                        Fuerza gravitacional en función de la masa
+                        $m_1$, manteniendo constantes la masa $m_2$
+                        y la distancia $r$.
+                    </figcaption>
+
+                </figure>
+
+            </section>
+
+
+            <section id="comparacion">
+
+                <h2>Fuerza eléctrica y fuerza gravitacional</h2>
+
+                <p>
+                    La fuerza eléctrica y la fuerza gravitacional
+                    presentan una estructura matemática semejante.
+                    Ambas interacciones dependen del producto de
+                    las propiedades de sus fuentes y disminuyen
+                    con el cuadrado de la distancia.
+                </p>
+
+                <p>
+                    La dependencia común con la distancia puede
+                    expresarse mediante:
+                </p>
+
+                <div class="ecuacion">
+                    $$F\propto\frac{1}{r^2}$$
+                </div>
+
+                <p>
+                    A pesar de esta semejanza matemática, las dos
+                    interacciones poseen características físicas
+                    diferentes. La fuerza eléctrica depende de la
+                    carga eléctrica, mientras que la fuerza
+                    gravitacional depende de la masa.
+                </p>
+
+                <p>
+                    Para comparar sus magnitudes, podemos considerar
+                    dos electrones separados una distancia de
+                    $1\ \mathrm{m}$. La magnitud de la fuerza eléctrica
+                    entre ellos se calcula mediante:
+                </p>
+
+                <div class="ecuacion">
+                    $$F_e=k\frac{e^2}{r^2}$$
+                </div>
+
+                <p>
+                    La fuerza gravitacional entre los mismos electrones
+                    se calcula mediante:
+                </p>
+
+                <div class="ecuacion">
+                    $$F_g=G\frac{m_e^2}{r^2}$$
+                </div>
+
+                <p>
+                    Aunque ambas fuerzas dependen de la misma distancia,
+                    la interacción eléctrica entre dos electrones es
+                    considerablemente mayor que su interacción
+                    gravitacional. Esto se debe a la diferencia entre
+                    las constantes que aparecen en las dos expresiones
+                    y a las propiedades físicas de las cargas y las
+                    masas involucradas.
+                </p>
+
+                <p>
+                    En el caso de dos electrones, la fuerza eléctrica
+                    es repulsiva porque ambos poseen carga negativa.
+                    La fuerza gravitacional, en cambio, es atractiva
+                    porque ambos cuerpos poseen masa.
+                </p>
+
+                <figure class="grafica">
+
+                    <img
+                        src="graficas/comparacion_electron.png"
+                        alt="Comparación entre fuerza eléctrica y gravitacional">
+
+                    <figcaption>
+                        Comparación de las fuerzas eléctrica y
+                        gravitacional entre dos electrones separados
+                        una distancia de $1\ \mathrm{m}$.
+                    </figcaption>
+
+                </figure>
+
+            </section>
+
+            <section id="campo-electrico">
+
+                <h2>Campo eléctrico</h2>
+
+                <p>
+                    El campo eléctrico es una magnitud física que
+                    permite describir la influencia que una carga
+                    eléctrica produce en el espacio que la rodea.
+                    En lugar de analizar directamente la fuerza
+                    entre dos cargas, el concepto de campo permite
+                    estudiar la influencia producida por una carga
+                    en cada punto del espacio.
+                </p>
+
+                <p>
+                    El campo eléctrico se define como la fuerza
+                    eléctrica que experimentaría una carga de prueba
+                    positiva, dividida entre el valor de dicha carga.
+                    Matemáticamente, esta definición se expresa como:
+                </p>
+
+                <div class="ecuacion">
+                    $$\vec{E}=\frac{\vec{F}_e}{q_0}$$
+                </div>
+
+                <p>
+                    La carga $q_0$ representa una carga de prueba
+                    positiva suficientemente pequeña para que su
+                    presencia no altere de manera significativa
+                    la distribución de cargas que produce el campo.
+                </p>
+
+                <p>
+                    El campo eléctrico es una magnitud vectorial,
+                    por lo que posee magnitud, dirección y sentido.
+                    Su dirección se establece mediante la dirección
+                    de la fuerza que experimentaría una carga de
+                    prueba positiva colocada en el punto de estudio.
+                </p>
+
+                <p>
+                    Para una carga puntual $q$, la magnitud del campo
+                    eléctrico a una distancia $r$ es:
+                </p>
+
+                <div class="ecuacion">
+                    $$E=k\frac{|q|}{r^2}$$
+                </div>
+
+                <p>
+                    La unidad del campo eléctrico en el Sistema
+                    Internacional es el newton por coulomb,
+                    representado como $\mathrm{N/C}$. También es
+                    posible expresar esta unidad como voltio por
+                    metro, es decir, $\mathrm{V/m}$.
+                </p>
+
+                <p>
+                    El campo eléctrico producido por una carga positiva
+                    apunta radialmente hacia afuera de la carga.
+                    En cambio, el campo producido por una carga
+                    negativa apunta radialmente hacia la carga.
+                </p>
+
+                <p>
+                    Al igual que la fuerza eléctrica, el campo
+                    producido por una carga puntual disminuye con
+                    el cuadrado de la distancia. Por esta razón,
+                    el campo es más intenso cerca de la fuente y
+                    disminuye conforme aumenta la separación.
+                </p>
+
+                <h3>Campo eléctrico para diferentes cargas</h3>
+
+                <p>
+                    Cuando la distancia se mantiene constante,
+                    el campo eléctrico aumenta proporcionalmente
+                    con la magnitud de la carga que lo produce.
+                    En la siguiente gráfica se representan los
+                    campos producidos por diferentes valores de carga.
+                </p>
+
+                <figure class="grafica">
+
+                    <img
+                        src="graficas/campo_electrico_2d.png"
+                        alt="Campo eléctrico para diferentes valores de carga">
+
+                    <figcaption>
+                        Magnitud del campo eléctrico producido por
+                        cargas puntuales de diferentes magnitudes.
+                    </figcaption>
+
+                </figure>
+
+
+                <h3>Representación tridimensional</h3>
+
+                <p>
+                    La representación tridimensional permite observar
+                    cómo cambia la magnitud del campo eléctrico en
+                    diferentes posiciones del plano. La superficie
+                    presenta valores elevados cerca de la fuente y
+                    disminuye al aumentar la distancia radial.
+                </p>
+
+                <figure class="grafica grafica-3d">
+
+                    <img
+                        src="graficas/campo_electrico_3d.png"
+                        alt="Representación tridimensional del campo eléctrico">
+
+                    <figcaption>
+                        Representación tridimensional de la magnitud
+                        del campo eléctrico producido por una carga
+                        puntual.
+                    </figcaption>
+
+                </figure>
+
+            </section>
+
+
+            <section id="campo-gravitacional">
+
+                <h2>Campo gravitacional</h2>
+
+                <p>
+                    El campo gravitacional es una magnitud física
+                    utilizada para describir la influencia que una
+                    masa produce en el espacio que la rodea. De
+                    manera similar al campo eléctrico, permite
+                    analizar la interacción producida por una fuente
+                    sin tener que considerar inicialmente un segundo
+                    cuerpo específico.
+                </p>
+
+                <p>
+                    El campo gravitacional se define como la fuerza
+                    gravitacional ejercida sobre una masa de prueba,
+                    dividida entre el valor de dicha masa. Para una
+                    masa puntual $M$, la magnitud del campo es:
+                </p>
+
+                <div class="ecuacion">
+                    $$g=G\frac{M}{r^2}$$
+                </div>
+
+                <p>
+                    La unidad del campo gravitacional en el Sistema
+                    Internacional es el newton por kilogramo,
+                    representado como $\mathrm{N/kg}$. Esta unidad
+                    también es equivalente a $\mathrm{m/s^2}$,
+                    debido a la relación entre fuerza, masa y
+                    aceleración.
+                </p>
+
+                <p>
+                    En el modelo gravitacional clásico, el campo
+                    producido por una masa puntual apunta hacia
+                    la masa que lo genera. Esto se debe a que la
+                    interacción gravitacional entre masas positivas
+                    es atractiva.
+                </p>
+
+                <p>
+                    La magnitud del campo gravitacional disminuye
+                    con el cuadrado de la distancia. Por lo tanto,
+                    un cuerpo ubicado cerca de la fuente experimenta
+                    un campo más intenso que otro cuerpo ubicado
+                    a una distancia mayor.
+                </p>
+
+                <h3>Campo gravitacional para diferentes masas</h3>
+
+                <p>
+                    Cuando la distancia permanece constante, el
+                    campo gravitacional aumenta proporcionalmente
+                    con la masa que lo produce. La siguiente gráfica
+                    muestra el comportamiento del campo para
+                    diferentes valores de masa.
+                </p>
+
+                <figure class="grafica">
+
+                    <img
+                        src="graficas/campo_gravitacional_2d.png"
+                        alt="Campo gravitacional para diferentes masas">
+
+                    <figcaption>
+                        Campo gravitacional producido por masas
+                        puntuales de diferentes magnitudes.
+                    </figcaption>
+
+                </figure>
+
+
+                <h3>Representación tridimensional</h3>
+
+                <p>
+                    La representación tridimensional permite visualizar
+                    la variación de la magnitud del campo gravitacional
+                    en diferentes posiciones. La superficie muestra
+                    valores elevados cerca de la masa y valores
+                    progresivamente menores cuando aumenta la distancia.
+                </p>
+
+                <figure class="grafica grafica-3d">
+
+                    <img
+                        src="graficas/campo_gravitacional_3d.png"
+                        alt="Representación tridimensional del campo gravitacional">
+
+                    <h3>Potencial gravitacional</h3>
+
+                    <p>
+                        El potencial gravitacional generado por una masa puntual se obtiene a partir de
+                        la relación entre el campo gravitacional y el potencial:
+                    </p>
+
+                    <div class="ecuacion">
+                        \[
+                        \vec{g}=-\nabla V_g
+                        \]
+                    </div>
+
+                    <p>
+                        Para una masa puntual \(M\), tomando como referencia \(V_g(\infty)=0\),
+                        el potencial gravitacional es:
+                    </p>
+
+                    <div class="ecuacion">
+                        \[
+                            V_g(r)=-\frac{GM}{r}
+                        \]
+                    </div>
+
+                    <div class="tabla-graficas">
+                        <div>
+                            <img src="graficas/potencial_gravitacional.png"
+                            alt="Potencial gravitacional en función de la distancia">
+                            <p>Potencial gravitacional en función de la distancia.</p>
+                        </div>
+
+                        <div>
+                            <img src="graficas/potencial_gravitacional_3D.png"
+                            alt="Superficie tridimensional del potencial gravitacional">
+                            <p>Representación tridimensional del potencial gravitacional.</p>
+                        </div>
+                    </div>
+
+                    <figcaption>
+                        Representación tridimensional de la magnitud
+                        del campo gravitacional producido por una
+                        masa puntual.
+                    </figcaption>
+
+                </figure>
+
+            </section>
+
+
+            <section id="comparacion-campos">
+
+                <h2>Comparación entre el campo eléctrico y gravitacional</h2>
+
+                <p>
+                    El campo eléctrico y el campo gravitacional son
+                    herramientas conceptuales que permiten describir
+                    la influencia producida por una fuente física
+                    sobre el espacio que la rodea. Aunque representan
+                    interacciones diferentes, sus expresiones
+                    matemáticas presentan algunas semejanzas.
+                </p>
+
+                <p>
+                    En el caso de una fuente puntual, ambos campos
+                    disminuyen con el cuadrado de la distancia.
+                    Esta característica se expresa mediante las
+                    siguientes relaciones:
+                </p>
+
+                <div class="ecuacion">
+                    $$E=k\frac{|q|}{r^2}$$
+                </div>
+
+                <div class="ecuacion">
+                    $$g=G\frac{M}{r^2}$$
+                </div>
+
+                <p>
+                    Las dos expresiones tienen una dependencia
+                    inversamente proporcional a $r^2$. Esto significa
+                    que, al aumentar la distancia a la fuente, la
+                    magnitud del campo disminuye rápidamente.
+                </p>
+
+                <p>
+                    Sin embargo, las fuentes físicas son diferentes.
+                    El campo eléctrico es producido por una carga
+                    eléctrica, mientras que el campo gravitacional
+                    es producido por una masa. Además, el campo
+                    eléctrico puede estar asociado a interacciones
+                    atractivas o repulsivas, mientras que el campo
+                    gravitacional clásico entre masas positivas
+                    es atractivo.
+                </p>
+
+
+                <h3>Cuadro comparativo</h3>
+
+                <table class="tabla-comparativa">
+
+                    <thead>
+
+                        <tr>
+                            <th>Característica</th>
+                            <th>Campo eléctrico</th>
+                            <th>Campo gravitacional</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Fuente</td>
+                            <td>Carga eléctrica $q$</td>
+                            <td>Masa $M$</td>
+                        </tr>
+
+                        <tr>
+                            <td>Expresión</td>
+                            <td>
+                                $E=k\dfrac{|q|}{r^2}$
+                            </td>
+                            <td>
+                                $g=G\dfrac{M}{r^2}$
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Dependencia con la distancia</td>
+                            <td>
+                                $\dfrac{1}{r^2}$
+                            </td>
+                            <td>
+                                $\dfrac{1}{r^2}$
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Dependencia con la fuente</td>
+                            <td>
+                                Proporcional a $|q|$
+                            </td>
+                            <td>
+                                Proporcional a $M$
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Constante</td>
+                            <td>
+                                $k\approx8.988\times10^9$
+                            </td>
+                            <td>
+                                $G\approx6.674\times10^{-11}$
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Unidad</td>
+                            <td>
+                                $\mathrm{N/C}$
+                            </td>
+                            <td>
+                                $\mathrm{N/kg}$
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Dirección</td>
+                            <td>
+                                Depende del signo de la carga
+                            </td>
+                            <td>
+                                Hacia la masa
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Interacción</td>
+                            <td>
+                                Puede ser atractiva o repulsiva
+                            </td>
+                            <td>
+                                Es atractiva en el modelo clásico
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Comportamiento gráfico</td>
+                            <td>
+                                Disminuye como $1/r^2$
+                            </td>
+                            <td>
+                                Disminuye como $1/r^2$
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+
+                <h3>Comparación de las representaciones gráficas</h3>
+
+                <table class="tabla-graficas">
+
+                    <thead>
+
+                        <tr>
+                            <th>Representación</th>
+                            <th>Campo eléctrico</th>
+                            <th>Campo gravitacional</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+                                Gráfica bidimensional
+                            </td>
+
+                            <td>
+
+                                <img
+                                    src="graficas/campo_electrico_2d.png"
+                                    alt="Gráfica bidimensional del campo eléctrico">
+
+                            </td>
+
+                            <td>
+
+                                <img
+                                    src="graficas/campo_gravitacional_2d.png"
+                                    alt="Gráfica bidimensional del campo gravitacional">
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                Gráfica tridimensional
+                            </td>
+
+                            <td>
+
+                                <img
+                                    src="graficas/campo_electrico_3d.png"
+                                    alt="Gráfica tridimensional del campo eléctrico">
+
+                            </td>
+
+                            <td>
+
+                                <img
+                                    src="graficas/campo_gravitacional_3d.png"
+                                    alt="Gráfica tridimensional del campo gravitacional">
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                Dependencia con la distancia
+                            </td>
+
+                            <td>
+                                $$E\propto\frac{1}{r^2}$$
+                            </td>
+
+                            <td>
+                                $$g\propto\frac{1}{r^2}$$
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                Comportamiento cerca de la fuente
+                            </td>
+
+                            <td>
+                                La magnitud del campo aumenta cuando
+                                la distancia disminuye.
+                            </td>
+
+                            <td>
+                                La magnitud del campo aumenta cuando
+                                la distancia disminuye.
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                Dependencia con la fuente
+                            </td>
+
+                            <td>
+                                Aumenta con la magnitud de la carga
+                                eléctrica.
+                            </td>
+
+                            <td>
+                                Aumenta con la masa que produce
+                                el campo.
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+
+                <h3>Observaciones de las gráficas</h3>
+
+                <p>
+                    En las representaciones bidimensionales se observa
+                    que tanto el campo eléctrico como el campo
+                    gravitacional disminuyen rápidamente a medida que
+                    aumenta la distancia a la fuente. Esta característica
+                    es consecuencia directa de la dependencia inversa
+                    con el cuadrado de la distancia.
+                </p>
+
+                <p>
+                    También se observa que aumentar la magnitud de la
+                    fuente incrementa la intensidad del campo. En el
+                    caso eléctrico, una mayor magnitud de carga produce
+                    un campo eléctrico mayor. En el caso gravitacional,
+                    una mayor masa produce un campo gravitacional mayor.
+                </p>
+
+                <p>
+                    Las representaciones tridimensionales permiten
+                    visualizar esta misma dependencia desde otra
+                    perspectiva. Las superficies presentan valores
+                    elevados cerca de la fuente y disminuyen conforme
+                    aumenta la distancia radial.
+                </p>
+
+                <p>
+                    Las gráficas permiten establecer una analogía
+                    matemática entre ambas interacciones. Sin embargo,
+                    es importante recordar que una semejanza en las
+                    ecuaciones no implica que las interacciones sean
+                    físicamente idénticas.
+                </p>
+
+
+                <h3>Conclusiones</h3>
+
+                <p>
+                    El campo eléctrico y el campo gravitacional permiten
+                    describir la influencia que una fuente produce en
+                    diferentes puntos del espacio. En ambos casos,
+                    el campo de una fuente puntual disminuye con el
+                    cuadrado de la distancia.
+                </p>
+
+                <p>
+                    La principal semejanza matemática entre las dos
+                    expresiones es la dependencia $1/r^2$. Esta
+                    relación permite comprender por qué la intensidad
+                    de ambos campos disminuye cuando el punto de
+                    observación se aleja de la fuente.
+                </p>
+
+                <p>
+                    A pesar de la semejanza matemática, las fuentes
+                    de los campos son diferentes. El campo eléctrico
+                    está asociado a la carga eléctrica, mientras que
+                    el campo gravitacional está asociado a la masa.
+                </p>
+
+                <p>
+                    Otra diferencia fundamental es que existen cargas
+                    eléctricas positivas y negativas. Por esta razón,
+                    la interacción eléctrica puede ser atractiva o
+                    repulsiva. En cambio, en el modelo gravitacional
+                    clásico, la interacción entre masas positivas
+                    es atractiva.
+                </p>
+
+                <p>
+                    El análisis de estas dos interacciones proporciona
+                    una base útil para estudiar el principio de
+                    superposición. Este principio permite determinar
+                    el campo total producido por varias fuentes,
+                    sumando vectorialmente las contribuciones
+                    individuales de cada una.
+                </p>
+
+            </section>
+
+            <section id="hilo-infinito">
+    <h2>7. Hilo infinito homogéneamente cargado</h2>
+
+    <p>
+        Consideremos un hilo infinito con una densidad lineal de carga uniforme
+        \(\lambda\). Debido a la simetría cilíndrica del sistema, el campo
+        eléctrico depende únicamente de la distancia radial \(s\) medida desde
+        el hilo.
+    </p>
+
+    <p>
+        Para determinar el campo eléctrico se considera un elemento diferencial
+        de carga \(dq=\lambda\,dL\). La contribución diferencial del campo es
+    </p>
+
+    <div class="ecuacion">
+        \[
+        dE=\frac{1}{4\pi\varepsilon_0}
+        \frac{\lambda\,dL}{r^2}
+        \]
+    </div>
+
+    <p>
+        Por simetría, las componentes paralelas al hilo se cancelan entre sí.
+        Únicamente permanece la componente perpendicular al hilo:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        dE=dE_1\cos\theta
+        \]
+    </div>
+
+    <p>
+        Debido a la simetría, puede integrarse únicamente sobre una mitad del
+        hilo y multiplicar el resultado por dos:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        E=
+        \frac{2\lambda}{4\pi\varepsilon_0}
+        \int_0^{\pi/2}
+        \frac{dL}{r^2}\cos\theta
+        \]
+    </div>
+
+    <p>
+        Al realizar la integración se obtiene:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        \boxed{
+        \vec E=
+        \frac{\lambda}
+        {2\pi\varepsilon_0s}
+        \hat{s}
+        }
+        \]
+    </div>
+
+    <p>
+        Donde \(s\) representa la distancia radial desde el hilo. El campo
+        disminuye proporcionalmente a \(1/s\). Para una densidad lineal
+        positiva apunta radialmente hacia afuera, mientras que para una
+        densidad negativa apunta hacia el hilo.
+    </p>
+
+    <div class="tabla-graficas">
+        <div>
+            <img src="graficas/07_hilo_infinito_2D.png"
+                 alt="Campo eléctrico de un hilo infinito">
+            <p>Campo eléctrico en función de la distancia radial para diferentes valores de \(\lambda\).</p>
+        </div>
+
+        <div>
+            <img src="graficas/07_hilo_infinito_3D.png"
+                 alt="Representación tridimensional del campo eléctrico de un hilo infinito">
+            <p>Representación tridimensional de la magnitud del campo eléctrico alrededor del hilo.</p>
+        </div>
+    </div>
+</section>
+
+
+<section id="espira-circular">
+    <h2>8. Espira circular uniformemente cargada</h2>
+
+    <p>
+        Consideremos una espira circular de radio \(a\), cargada
+        uniformemente con una densidad lineal de carga \(\lambda\).
+        Tomaremos el eje \(x\) como eje de simetría de la espira y
+        determinaremos el campo y el potencial en puntos situados sobre
+        dicho eje.
+    </p>
+
+    <p>
+        Un elemento diferencial de longitud \(dL\) posee una carga:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        dq=\lambda\,dL
+        \]
+    </div>
+
+    <p>
+        La distancia entre cualquier elemento de la espira y un punto situado
+        sobre el eje \(x\) es
+    </p>
+
+    <div class="ecuacion">
+        \[
+        r=\sqrt{a^2+x^2}
+        \]
+    </div>
+
+    <p>
+        El elemento diferencial del campo eléctrico es
+    </p>
+
+    <div class="ecuacion">
+        \[
+        d\vec E=
+        \frac{1}{4\pi\varepsilon_0}
+        \frac{dq}{a^2+x^2}
+        \hat r
+        \]
+    </div>
+
+    <p>
+        Debido a la simetría circular, las componentes perpendiculares al eje
+        \(x\) se cancelan. Solamente permanece la componente paralela al eje:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        dE_x=
+        \frac{1}{4\pi\varepsilon_0}
+        \frac{x\,dL}
+        {(a^2+x^2)^{3/2}}\lambda
+        \]
+    </div>
+
+    <p>
+        Integrando alrededor de toda la espira:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        E_x=
+        \frac{\lambda x}{4\pi\varepsilon_0
+        (a^2+x^2)^{3/2}}
+        \oint dL
+        \]
+    </div>
+
+    <p>
+        Como
+    </p>
+
+    <div class="ecuacion">
+        \[
+        \oint dL=2\pi a
+        \]
+    </div>
+
+    <p>
+        obtenemos:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        \boxed{
+        E_x=
+        \frac{\lambda ax}
+        {2\varepsilon_0
+        (a^2+x^2)^{3/2}}
+        }
+        \]
+    </div>
+
+    <p>
+        Para determinar el potencial eléctrico, cada elemento de carga aporta
+    </p>
+
+    <div class="ecuacion">
+        \[
+        dV=
+        \frac{1}{4\pi\varepsilon_0}
+        \frac{\lambda\,dL}
+        {\sqrt{a^2+x^2}}
+        \]
+    </div>
+
+    <p>
+        Integrando alrededor de la espira:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        V=
+        \frac{\lambda}{4\pi\varepsilon_0
+        \sqrt{a^2+x^2}}
+        \oint dL
+        \]
+    </div>
+
+    <div class="ecuacion">
+        \[
+        \boxed{
+        V(x)=
+        \frac{\lambda a}
+        {2\varepsilon_0\sqrt{a^2+x^2}}
+        }
+        \]
+    </div>
+
+    <div class="tabla-graficas">
+        <div>
+            <img src="graficas/08_espira_circular_2D_campo.png"
+                 alt="Campo eléctrico de una espira circular">
+            <p>Campo eléctrico sobre el eje de la espira.</p>
+        </div>
+
+        <div>
+            <img src="graficas/08_espira_circular_2D_potencial.png"
+                 alt="Potencial eléctrico de una espira circular">
+            <p>Potencial eléctrico sobre el eje de la espira.</p>
+        </div>
+
+        <div>
+            <img src="graficas/08_espira_circular_3D_campo.png"
+                 alt="Geometría tridimensional del campo eléctrico de una espira">
+            <p>Geometría tridimensional de la magnitud del campo eléctrico alrededor del eje de la espira.</p>
+        </div>
+    </div>
+</section>
+
+
+<section id="disco">
+    <h2>9. Disco uniformemente cargado</h2>
+
+    <p>
+        Consideremos un disco de radio \(a\) con una densidad superficial de
+        carga uniforme \(\sigma\). Para determinar el campo eléctrico sobre
+        su eje de simetría se puede dividir el disco en una colección de
+        espiras circulares concéntricas.
+    </p>
+
+    <p>
+        Un anillo diferencial de radio \(r\) y espesor \(dr\) posee un área:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        dA=2\pi r\,dr
+        \]
+    </div>
+
+    <p>
+        Por lo tanto, la carga diferencial es
+    </p>
+
+    <div class="ecuacion">
+        \[
+        dq=\sigma\,dA
+        =2\pi\sigma r\,dr
+        \]
+    </div>
+
+    <p>
+        Considerando un punto situado a una distancia \(z\) sobre el eje del
+        disco, la contribución del anillo al campo eléctrico es:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        dE=
+        \frac{1}{4\pi\varepsilon_0}
+        \frac{z\,dq}
+        {(r^2+z^2)^{3/2}}
+        \]
+    </div>
+
+    <p>
+        Sustituyendo \(dq\):
+    </p>
+
+    <div class="ecuacion">
+        \[
+        dE=
+        \frac{\sigma z}{2\varepsilon_0}
+        \frac{r\,dr}
+        {(r^2+z^2)^{3/2}}
+        \]
+    </div>
+
+    <p>
+        Integrando desde el centro del disco hasta su borde:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        E(z)=
+        \frac{\sigma z}{2\varepsilon_0}
+        \int_0^a
+        \frac{r\,dr}
+        {(r^2+z^2)^{3/2}}
+        \]
+    </div>
+
+    <p>
+        Para \(z>0\), el resultado es:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        \boxed{
+        E(z)=
+        \frac{\sigma}{2\varepsilon_0}
+        \left(
+        1-
+        \frac{z}{\sqrt{z^2+a^2}}
+        \right)
+        }
+        \]
+    </div>
+
+    <p>
+        Para el potencial eléctrico se obtiene:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        \boxed{
+        V(z)=
+        \frac{\sigma}{2\varepsilon_0}
+        \left(
+        \sqrt{z^2+a^2}-|z|
+        \right)
+        }
+        \]
+    </div>
+
+    <p>
+        El campo cambia de dirección al pasar de un lado del disco al otro,
+        mientras que el potencial conserva simetría respecto al plano del
+        disco.
+    </p>
+
+    <div class="tabla-graficas">
+        <div>
+            <img src="graficas/09_disco_2D_campo.png"
+                 alt="Campo eléctrico de un disco uniformemente cargado">
+            <p>Campo eléctrico sobre el eje de un disco cargado.</p>
+        </div>
+
+        <div>
+            <img src="graficas/09_disco_2D_potencial.png"
+                 alt="Potencial eléctrico de un disco uniformemente cargado">
+            <p>Potencial eléctrico sobre el eje del disco.</p>
+        </div>
+
+        <div>
+            <img src="graficas/09_disco_3D_campo.png"
+                 alt="Campo eléctrico tridimensional de un disco">
+            <p>Representación tridimensional de la magnitud del campo eléctrico.</p>
+        </div>
+    </div>
+</section>
+
+
+<section id="dipolo">
+    <h2>10. Dipolo eléctrico</h2>
+
+    <p>
+        Un dipolo eléctrico está constituido por dos cargas puntuales de igual
+        magnitud y signos opuestos, \(+Q\) y \(-Q\), separadas por una
+        distancia \(s\). El momento dipolar eléctrico se define como:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        \boxed{
+        \vec p=Qs\,\hat z
+        }
+        \]
+    </div>
+
+    <p>
+        El potencial producido por las dos cargas puede escribirse como:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        V=
+        \frac{Q}{4\pi\varepsilon_0r_1}
+        -
+        \frac{Q}{4\pi\varepsilon_0r_2}
+        \]
+    </div>
+
+    <p>
+        Para puntos alejados del dipolo, donde \(r\gg s\), se puede realizar
+        una expansión en serie. El resultado de la aproximación de dipolo es:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        \boxed{
+        V(r,\theta)=
+        \frac{p\cos\theta}
+        {4\pi\varepsilon_0r^2}
+        }
+        \]
+    </div>
+
+    <p>
+        El campo eléctrico se obtiene a partir del potencial mediante:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        \boxed{
+        \vec E=-\nabla V
+        }
+        \]
+    </div>
+
+    <p>
+        En coordenadas esféricas:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        \nabla V=
+        \hat r\frac{\partial V}{\partial r}
+        +
+        \hat\theta\frac{1}{r}
+        \frac{\partial V}{\partial\theta}
+        +
+        \hat\phi\frac{1}{r\sin\theta}
+        \frac{\partial V}{\partial\phi}
+        \]
+    </div>
+
+    <p>
+        Como el potencial no depende de \(\phi\), se obtiene:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        \boxed{
+        E_r=
+        \frac{2p\cos\theta}
+        {4\pi\varepsilon_0r^3}
+        }
+        \]
+    </div>
+
+    <div class="ecuacion">
+        \[
+        \boxed{
+        E_\theta=
+        \frac{p\sin\theta}
+        {4\pi\varepsilon_0r^3}
+        }
+        \]
+    </div>
+
+    <div class="ecuacion">
+        \[
+        \boxed{
+        E_\phi=0
+        }
+        \]
+    </div>
+
+    <p>
+        Por tanto, la magnitud del campo es:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        \boxed{
+        |\vec E|=
+        \frac{p}
+        {4\pi\varepsilon_0r^3}
+        \sqrt{
+        4\cos^2\theta+\sin^2\theta
+        }
+        }
+        \]
+    </div>
+
+    <div class="tabla-graficas">
+        <div>
+            <img src="graficas/10_dipolo_2D_potencial.png"
+                 alt="Potencial eléctrico de un dipolo en coordenadas polares">
+            <p>Distribución angular del potencial eléctrico del dipolo.</p>
+        </div>
+
+        <div>
+            <img src="graficas/10_dipolo_2D_campo.png"
+                 alt="Magnitud del campo eléctrico de un dipolo en coordenadas polares">
+            <p>Magnitud del campo eléctrico del dipolo en coordenadas polares.</p>
+        </div>
+
+        <div>
+            <img src="graficas/10_dipolo_3D_potencial.png"
+                 alt="Potencial eléctrico del dipolo en coordenadas esféricas">
+            <p>Distribución tridimensional del potencial sobre una superficie esférica.</p>
+        </div>
+
+        <div>
+            <img src="graficas/10_dipolo_3D_campo.png"
+                 alt="Campo eléctrico del dipolo en coordenadas esféricas">
+            <p>Distribución tridimensional de la magnitud del campo sobre una superficie esférica.</p>
+        </div>
+    </div>
+</section>
+
+
+<section id="cuadrupolo">
+    <h2>11. Cuadrupolo eléctrico</h2>
+
+    <p>
+        Un cuadrupolo eléctrico puede construirse mediante una distribución
+        de cargas cuyo momento monopolar y dipolar neto se anulan. En la
+        aproximación de campo lejano, el potencial presenta una dependencia
+        espacial de orden superior a la del dipolo.
+    </p>
+
+    <p>
+        Para una configuración lineal simétrica de cargas, el potencial
+        cuadrupolar puede expresarse como:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        \boxed{
+        V(r,\theta)=
+        \frac{Qs^2}
+        {16\pi\varepsilon_0r^3}
+        \left(
+        3\cos^2\theta-1
+        \right)
+        }
+        \]
+    </div>
+
+    <p>
+        Definiendo:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        A=
+        \frac{Qs^2}
+        {16\pi\varepsilon_0}
+        \]
+    </div>
+
+    <p>
+        podemos escribir:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        V=
+        \frac{A}{r^3}
+        \left(
+        3\cos^2\theta-1
+        \right)
+        \]
+    </div>
+
+    <p>
+        El campo eléctrico se obtiene nuevamente mediante:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        \vec E=-\nabla V
+        \]
+    </div>
+
+    <p>
+        La componente radial resulta:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        \boxed{
+        E_r=
+        \frac{3A}{r^4}
+        \left(
+        3\cos^2\theta-1
+        \right)
+        }
+        \]
+    </div>
+
+    <p>
+        Mientras que la componente angular es:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        \boxed{
+        E_\theta=
+        \frac{6A}{r^4}
+        \sin\theta\cos\theta
+        }
+        \]
+    </div>
+
+    <div class="ecuacion">
+        \[
+        \boxed{
+        E_\phi=0
+        }
+        \]
+    </div>
+
+    <p>
+        La magnitud del campo es:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        \boxed{
+        |\vec E|=
+        \sqrt{
+        E_r^2+E_\theta^2
+        }
+        }
+        \]
+    </div>
+
+    <p>
+        A diferencia del dipolo, el cuadrupolo presenta una dependencia
+        angular más compleja y una disminución más rápida con la distancia,
+        proporcional a \(1/r^4\) para el campo.
+    </p>
+
+    <div class="tabla-graficas">
+        <div>
+            <img src="graficas/11_cuadrupolo_2D_potencial.png"
+                 alt="Potencial eléctrico de un cuadrupolo en coordenadas polares">
+            <p>Distribución angular del potencial eléctrico del cuadrupolo.</p>
+        </div>
+
+        <div>
+            <img src="graficas/11_cuadrupolo_2D_campo.png"
+                 alt="Magnitud del campo eléctrico de un cuadrupolo en coordenadas polares">
+            <p>Magnitud del campo eléctrico del cuadrupolo.</p>
+        </div>
+
+        <div>
+            <img src="graficas/11_cuadrupolo_3D_potencial.png"
+                 alt="Potencial eléctrico del cuadrupolo en coordenadas esféricas">
+            <p>Distribución tridimensional del potencial sobre una superficie esférica.</p>
+        </div>
+
+        <div>
+            <img src="graficas/11_cuadrupolo_3D_campo.png"
+                 alt="Campo eléctrico del cuadrupolo en coordenadas esféricas">
+            <p>Distribución tridimensional de la magnitud del campo eléctrico.</p>
+        </div>
+    </div>
+</section>
+
+
+<section id="esfera-uniforme">
+    <h2>12. Esfera uniformemente cargada</h2>
+
+    <p>
+        Consideremos una esfera maciza de radio \(a\) que posee una densidad
+        volumétrica de carga constante:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        \boxed{
+        \rho(r)=\rho_0
+        }
+        \]
+    </div>
+
+    <p>
+        Para determinar la carga total integramos la densidad sobre todo el
+        volumen de la esfera:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        Q_t=
+        \int_0^a
+        \rho_0\,4\pi r^2\,dr
+        \]
+    </div>
+
+    <div class="ecuacion">
+        \[
+        \boxed{
+        Q_t=
+        \frac{4\pi\rho_0a^3}{3}
+        }
+        \]
+    </div>
+
+    <h3>Campo eléctrico interior</h3>
+
+    <p>
+        Para un radio \(r<a\), la carga encerrada por una superficie gaussiana
+        es:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        Q(r)=
+        \frac{4\pi\rho_0r^3}{3}
+        \]
+    </div>
+
+    <p>
+        Aplicando la ley de Gauss:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        E(4\pi r^2)=
+        \frac{Q(r)}{\varepsilon_0}
+        \]
+    </div>
+
+    <div class="ecuacion">
+        \[
+        \boxed{
+        E_{\mathrm{int}}=
+        \frac{\rho_0r}
+        {3\varepsilon_0}
+        }
+        \]
+    </div>
+
+    <h3>Campo eléctrico exterior</h3>
+
+    <p>
+        Para \(r>a\), toda la carga de la esfera queda encerrada:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        \boxed{
+        E_{\mathrm{ext}}=
+        \frac{\rho_0a^3}
+        {3\varepsilon_0r^2}
+        }
+        \]
+    </div>
+
+    <h3>Potencial eléctrico exterior</h3>
+
+    <div class="ecuacion">
+        \[
+        \boxed{
+        V_{\mathrm{ext}}=
+        \frac{\rho_0a^3}
+        {3\varepsilon_0r}
+        }
+        \]
+    </div>
+
+    <h3>Potencial eléctrico interior</h3>
+
+    <p>
+        Utilizando la continuidad del potencial en \(r=a\) y la integración
+        del campo eléctrico hacia el interior:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        \boxed{
+        V_{\mathrm{int}}=
+        \frac{\rho_0}
+        {6\varepsilon_0}
+        \left(
+        3a^2-r^2
+        \right)
+        }
+        \]
+    </div>
+
+    <p>
+        El campo eléctrico crece linealmente dentro de la esfera y disminuye
+        como \(1/r^2\) fuera de ella. Ambas expresiones coinciden en la
+        superficie \(r=a\).
+    </p>
+
+    <div class="tabla-graficas">
+        <div>
+            <img src="graficas/12_esfera_uniforme_2D_campo.png"
+                 alt="Campo eléctrico de una esfera uniformemente cargada">
+            <p>Campo eléctrico en función de la distancia radial.</p>
+        </div>
+
+        <div>
+            <img src="graficas/12_esfera_uniforme_2D_potencial.png"
+                 alt="Potencial eléctrico de una esfera uniformemente cargada">
+            <p>Potencial eléctrico en función de la distancia radial.</p>
+        </div>
+
+        <div>
+            <img src="graficas/12_esfera_uniforme_3D_campo.png"
+                 alt="Representación tridimensional del campo eléctrico de una esfera">
+            <p>Representación tridimensional de la magnitud del campo eléctrico.</p>
+        </div>
+
+        <div>
+            <img src="graficas/12_esfera_uniforme_3D_potencial.png"
+                 alt="Representación tridimensional del potencial de una esfera">
+            <p>Representación tridimensional del potencial eléctrico.</p>
+        </div>
+    </div>
+</section>
+
+
+<section id="esfera-variable">
+    <h2>13. Esfera con densidad de carga radialmente variable</h2>
+
+    <p>
+        Finalmente, consideremos una esfera de radio \(a\) cuya densidad
+        volumétrica de carga no es constante, sino que depende de la posición
+        radial:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        \boxed{
+        \rho(r)=
+        \rho_0
+        \left(
+        1-\frac{r^2}{a^2}
+        \right)
+        }
+        \]
+    </div>
+
+    <p>
+        Esta distribución es máxima en el centro de la esfera y disminuye
+        progresivamente hasta hacerse cero en \(r=a\).
+    </p>
+
+    <h3>Carga total</h3>
+
+    <p>
+        La carga total se obtiene integrando la densidad sobre el volumen:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        Q_t=
+        4\pi
+        \int_0^a
+        \rho_0
+        \left(
+        1-\frac{r^2}{a^2}
+        \right)
+        r^2\,dr
+        \]
+    </div>
+
+    <p>
+        Después de realizar la integración:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        \boxed{
+        Q_t=
+        \frac{8\pi\rho_0a^3}{15}
+        }
+        \]
+    </div>
+
+    <h3>Carga encerrada</h3>
+
+    <p>
+        Para una superficie gaussiana de radio \(r<a\):
+    </p>
+
+    <div class="ecuacion">
+        \[
+        Q(r)=
+        4\pi\rho_0
+        \int_0^r
+        \left(
+        1-\frac{r'^2}{a^2}
+        \right)
+        r'^2\,dr'
+        \]
+    </div>
+
+    <div class="ecuacion">
+        \[
+        \boxed{
+        Q(r)=
+        4\pi\rho_0
+        \left(
+        \frac{r^3}{3}
+        -
+        \frac{r^5}{5a^2}
+        \right)
+        }
+        \]
+    </div>
+
+    <h3>Campo eléctrico interior</h3>
+
+    <p>
+        Aplicando la ley de Gauss:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        E(4\pi r^2)=
+        \frac{Q(r)}{\varepsilon_0}
+        \]
+    </div>
+
+    <p>
+        Por tanto:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        \boxed{
+        E_{\mathrm{int}}=
+        \frac{\rho_0}{\varepsilon_0}
+        \left(
+        \frac r3-
+        \frac{r^3}{5a^2}
+        \right)
+        }
+        \]
+    </div>
+
+    <h3>Campo eléctrico exterior</h3>
+
+    <p>
+        Para \(r>a\), la superficie gaussiana encierra toda la carga:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        \boxed{
+        E_{\mathrm{ext}}=
+        \frac{2\rho_0a^3}
+        {15\varepsilon_0r^2}
+        }
+        \]
+    </div>
+
+    <h3>Potencial eléctrico exterior</h3>
+
+    <div class="ecuacion">
+        \[
+        \boxed{
+        V_{\mathrm{ext}}=
+        \frac{2\rho_0a^3}
+        {15\varepsilon_0r}
+        }
+        \]
+    </div>
+
+    <h3>Potencial eléctrico interior</h3>
+
+    <p>
+        Integrando el campo desde la superficie hacia el interior y tomando
+        \(V(\infty)=0\), se obtiene:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        \boxed{
+        V_{\mathrm{int}}=
+        \frac{\rho_0}{\varepsilon_0}
+        \left(
+        \frac{a^2}{4}
+        -
+        \frac{r^2}{6}
+        +
+        \frac{r^4}{20a^2}
+        \right)
+        }
+        \]
+    </div>
+
+    <h3>Máximo del campo eléctrico</h3>
+
+    <p>
+        Para encontrar la posición donde el campo eléctrico alcanza su máximo
+        valor dentro de la esfera, derivamos \(E_{\mathrm{int}}\) respecto a
+        \(r\):
+    </p>
+
+    <div class="ecuacion">
+        \[
+        \frac{dE_{\mathrm{int}}}{dr}
+        =
+        \frac{\rho_0}{\varepsilon_0}
+        \left(
+        \frac13-
+        \frac{3r^2}{5a^2}
+        \right)
+        \]
+    </div>
+
+    <p>
+        Igualando la derivada a cero:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        \frac13-
+        \frac{3r^2}{5a^2}=0
+        \]
+    </div>
+
+    <p>
+        Finalmente:
+    </p>
+
+    <div class="ecuacion">
+        \[
+        \boxed{
+        r_{\max}=
+        \frac{\sqrt5}{3}a
+        }
+        \]
+    </div>
+
+    <p>
+        Como \(\sqrt5/3\approx0.745\), el máximo del campo se encuentra
+        aproximadamente al \(74.5\%\) del radio de la esfera, medido desde
+        su centro.
+    </p>
+
+    <div class="tabla-graficas">
+        <div>
+            <img src="graficas/13_esfera_variable_2D_campo.png"
+                 alt="Campo eléctrico de una esfera con densidad radial variable">
+            <p>Campo eléctrico y posición del máximo \(r_{\max}\).</p>
+        </div>
+
+        <div>
+            <img src="graficas/13_esfera_variable_2D_potencial.png"
+                 alt="Potencial eléctrico de una esfera con densidad radial variable">
+            <p>Potencial eléctrico en función de la distancia radial.</p>
+        </div>
+
+        <div>
+            <img src="graficas/13_esfera_variable_3D_campo.png"
+                 alt="Representación tridimensional del campo eléctrico de una esfera con densidad variable">
+            <p>Representación tridimensional de la magnitud del campo eléctrico.</p>
+        </div>
+
+        <div>
+            <img src="graficas/13_esfera_variable_3D_potencial.png"
+                 alt="Representación tridimensional del potencial eléctrico de una esfera con densidad variable">
+            <p>Representación tridimensional del potencial eléctrico.</p>
+        </div>
+    </div>
+</section>
+
+<section id="sintesis-2-15">
+    <h2>14. Síntesis de la sección 2.15</h2>
+
+    <p>
+        La sección 2.15 del texto guía estudia la energía asociada al campo eléctrico.
+        A partir de la energía potencial de una distribución continua de cargas,
+        expresada como
+    </p>
+
+    <div class="formula">
+        \[
+        W=\frac{1}{2}\int_V \rho V\,d\tau
+        \]
+    </div>
+
+    <p>
+        se puede transformar esta expresión utilizando las relaciones entre el
+        potencial eléctrico y el campo eléctrico. Recordando que
+    </p>
+
+    <div class="formula">
+        \[
+        \mathbf{E}=-\nabla V
+        \]
+    </div>
+
+    <p>
+        y la ecuación de Poisson,
+    </p>
+
+    <div class="formula">
+        \[
+        \nabla^2V=-\frac{\rho}{\varepsilon_0},
+        \]
+    </div>
+
+    <p>
+        la energía puede escribirse directamente en función del campo eléctrico:
+    </p>
+
+    <div class="formula">
+        \[
+        \boxed{
+        W=\frac{\varepsilon_0}{2}\int_V E^2\,d\tau
+        }
+        \]
+    </div>
+
+    <p>
+        Esta expresión permite interpretar la energía electrostática como una
+        cantidad distribuida en el espacio donde existe el campo. De ella se
+        obtiene la densidad de energía eléctrica:
+    </p>
+
+    <div class="formula">
+        \[
+        \boxed{
+        u_E=\frac{1}{2}\varepsilon_0E^2
+        }
+        \]
+    </div>
+
+    <p>
+        donde \(u_E\) representa la energía eléctrica almacenada por unidad de
+        volumen y sus unidades son \(\mathrm{J/m^3}\). Debido a que depende de
+        \(E^2\), la densidad de energía es siempre positiva.
+    </p>
+
+    <p>
+        Un resultado importante de esta sección es que la energía de una
+        distribución de cargas puede analizarse sin necesidad de considerar
+        directamente cada interacción entre pares de cargas. En su lugar,
+        puede calcularse la energía almacenada en el campo eléctrico presente
+        en el espacio.
+    </p>
+
+    <p>
+        Esta interpretación resulta especialmente útil para distribuciones
+        continuas y para sistemas con simetría, ya que permite obtener la
+        energía mediante una integración espacial del campo.
+    </p>
+</section>
+
+<section id="ejemplo-2-143">
+    <h2>15. Secciones 2.14–2.15: ejemplo y ecuación (2-143)</h2>
+
+    <p>
+        En la sección 2.14 se introduce la energía potencial electrostática de
+        una distribución de cargas. Para una distribución continua puede
+        expresarse como
+    </p>
+
+    <div class="formula">
+        \[
+        \boxed{
+        W=\frac{1}{2}\int \rho V\,d\tau
+        }
+        \]
+    </div>
+
+    <p>
+        Posteriormente, la sección 2.15 expresa esta misma energía en términos
+        del campo eléctrico:
+    </p>
+
+    <div class="formula">
+        \[
+        W=\frac{\varepsilon_0}{2}\int E^2\,d\tau.
+        \]
+    </div>
+
+    <p>
+        Para el ejemplo del texto se considera una esfera conductora aislada
+        de radio \(R\) y carga total \(Q\). En el interior del conductor el
+        campo eléctrico es cero, mientras que en el exterior se comporta como
+        el campo de una carga puntual:
+    </p>
+
+    <div class="formula">
+        \[
+        E(r)=\frac{Q}{4\pi\varepsilon_0r^2},
+        \qquad r\geq R.
+        \]
+    </div>
+
+    <p>
+        Debido a que el campo únicamente existe fuera de la esfera, la energía
+        se obtiene integrando desde \(R\) hasta el infinito. En coordenadas
+        esféricas, \(d\tau=4\pi r^2dr\), por lo que:
+    </p>
+
+    <div class="formula">
+        \[
+        W=
+        \frac{\varepsilon_0}{2}
+        \int_R^\infty
+        \left(
+        \frac{Q}{4\pi\varepsilon_0r^2}
+        \right)^2
+        4\pi r^2\,dr.
+        \]
+    </div>
+
+    <p>
+        Esta es la forma correspondiente a la ecuación (2-143) utilizada en
+        el ejemplo. Simplificando:
+    </p>
+
+    <div class="formula">
+        \[
+        W=
+        \frac{Q^2}{8\pi\varepsilon_0}
+        \int_R^\infty
+        \frac{1}{r^2}\,dr.
+        \]
+    </div>
+
+    <p>
+        Al realizar la integración:
+    </p>
+
+    <div class="formula">
+        \[
+        W=
+        \frac{Q^2}{8\pi\varepsilon_0}
+        \left[-\frac{1}{r}\right]_R^\infty
+        \]
+    </div>
+
+    <div class="formula">
+        \[
+        \boxed{
+        W=\frac{Q^2}{8\pi\varepsilon_0R}
+        }
+        \]
+    </div>
+
+    <p>
+        Para visualizar cómo se distribuye esta energía en función de la
+        distancia, se representa la contribución diferencial
+    </p>
+
+    <div class="formula">
+        \[
+        \boxed{
+        \frac{dW}{dr}
+        =
+        \frac{Q^2}{8\pi\varepsilon_0r^2}
+        }
+        \]
+    </div>
+
+    <p>
+        La gráfica muestra que la contribución a la energía disminuye
+        rápidamente al alejarnos de la superficie del conductor.
+    </p>
+
+    <div class="tabla-graficas">
+        <img src="graficas/15_energia_esfera_2D.png"
+             alt="Contribución diferencial de energía de una esfera conductora">
+    </div>
+</section>
+
+<section id="legendre">
+    <h2>16. Polinomios de Legendre \(P_0\) a \(P_5\)</h2>
+
+    <p>
+        Los polinomios de Legendre aparecen de forma natural al resolver
+        problemas de electrostática con simetría esférica, especialmente en
+        expansiones multipolares del potencial eléctrico. Se definen mediante
+        la fórmula de Rodrigues:
+    </p>
+
+    <div class="formula">
+        \[
+        \boxed{
+        P_n(x)=
+        \frac{1}{2^n n!}
+        \frac{d^n}{dx^n}
+        (x^2-1)^n
+        }
+        \]
+    </div>
+
+    <p>
+        Los primeros seis polinomios son:
+    </p>
+
+    <div class="formula">
+        \[
+        P_0(x)=1
+        \]
+    </div>
+
+    <div class="formula">
+        \[
+        P_1(x)=x
+        \]
+    </div>
+
+    <div class="formula">
+        \[
+        P_2(x)=\frac{1}{2}(3x^2-1)
+        \]
+    </div>
+
+    <div class="formula">
+        \[
+        P_3(x)=\frac{1}{2}(5x^3-3x)
+        \]
+    </div>
+
+    <div class="formula">
+        \[
+        P_4(x)=\frac{1}{8}(35x^4-30x^2+3)
+        \]
+    </div>
+
+    <div class="formula">
+        \[
+        P_5(x)=\frac{1}{8}(63x^5-70x^3+15x)
+        \]
+    </div>
+
+    <p>
+        Todos ellos se representan en el intervalo \(-1\leq x\leq1\). En
+        problemas de coordenadas esféricas suele aparecer
+        \(x=\cos\theta\), por lo que los polinomios permiten expresar la
+        dependencia angular de diferentes distribuciones de carga.
+    </p>
+
+    <div class="tabla-graficas">
+        <img src="graficas/16_polinomios_legendre_P0_P5.png"
+             alt="Polinomios de Legendre desde P0 hasta P5">
+    </div>
+</section>
+
+<section id="terminos">
+
+    <h2>Términos desconocidos</h2>
+
+    <p>
+        <sup>1</sup>
+        <strong>Electrostática:</strong>
+        rama de la física que estudia las cargas eléctricas
+        en reposo y las interacciones que se producen
+        entre ellas.
+    </p>
+
+    <p>
+        <sup>2</sup>
+        <strong>Permisividad eléctrica:</strong>
+        propiedad física que caracteriza la respuesta
+        de un medio frente a un campo eléctrico.
+    </p>
+
+    <p>
+        <sup>3</sup>
+        <strong>Campo:</strong>
+        representación física y matemática utilizada
+        para describir una magnitud que puede tomar
+        un valor en cada punto del espacio.
+    </p>
+
+    <p>
+        <sup>4</sup>
+        <strong>Carga puntual:</strong>
+        modelo idealizado en el que se considera que
+        toda la carga de un cuerpo está concentrada
+        en un único punto.
+    </p>
+
+    <p>
+        <sup>5</sup>
+        <strong>Magnitud escalar:</strong>
+        cantidad física que se describe mediante un
+        valor numérico y una unidad, sin necesidad
+        de especificar una dirección.
+    </p>
+
+    <p>
+        <sup>6</sup>
+        <strong>Magnitud vectorial:</strong>
+        cantidad física que requiere una magnitud,
+        una dirección y un sentido para ser descrita
+        completamente.
+    </p>
+
+    <p>
+        <sup>7</sup>
+        <strong>Superposición:</strong>
+        principio que establece que el efecto total
+        producido por varias fuentes puede obtenerse
+        sumando las contribuciones individuales de
+        cada fuente.
+    </p>
+
+    <p>
+        <sup>8</sup>
+        <strong>Densidad de energía eléctrica:</strong>
+        cantidad de energía eléctrica almacenada
+        por unidad de volumen en una región donde
+        existe un campo eléctrico.
+    </p>
+
+    <p>
+        <sup>9</sup>
+        <strong>Energía electrostática:</strong>
+        energía asociada a una distribución de cargas
+        eléctricas y al campo eléctrico que esta
+        produce.
+    </p>
+
+    <p>
+        <sup>10</sup>
+        <strong>Conductor esférico:</strong>
+        conductor cuya superficie tiene geometría
+        esférica. En equilibrio electrostático, el
+        campo eléctrico en su interior es cero y la
+        carga eléctrica se encuentra distribuida
+        sobre su superficie.
+    </p>
+
+    <p>
+        <sup>11</sup>
+        <strong>Presión electrostática:</strong>
+        fuerza eléctrica por unidad de área que actúa
+        sobre la superficie de un conductor cargado.
+    </p>
+
+    <p>
+        <sup>12</sup>
+        <strong>Polinomios de Legendre:</strong>
+        familia de polinomios ortogonales que aparece
+        en problemas con simetría esférica y que resulta
+        especialmente útil para representar la dependencia
+        angular de potenciales eléctricos.
+    </p>
+
+    <p>
+        <sup>13</sup>
+        <strong>Fórmula de Rodrigues:</strong>
+        expresión matemática que permite obtener los
+        polinomios de Legendre mediante derivadas sucesivas.
+    </p>
+
+    <p>
+        <sup>14</sup>
+        <strong>Distribución multipolar:</strong>
+        representación de una distribución de carga
+        mediante términos de diferente orden, como el
+        monopolo, dipolo, cuadrupolo y órdenes superiores.
+    </p>
+
+    <p>
+        <sup>15</sup>
+        <strong>Densidad superficial de carga:</strong>
+        cantidad de carga eléctrica distribuida por
+        unidad de área sobre una superficie.
+    </p>
+
+</section>
+
+        </main>
+
+        <footer>
+
+            <p>
+                Cuaderno virtual de Campos Electromagnéticos
+            </p>
+
+            <p>
+                Universidad Distrital Francisco José de Caldas
+            </p>
+
+            <p>
+                © 2026
+            </p>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
